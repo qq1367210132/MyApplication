@@ -50,7 +50,8 @@ public class ChaoJiShuiActivity extends BaseActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         //1.MODE_SCROLLABLE模式
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
-        tabLayout.setTabTextColors(R.color.white, R.color.color_4bae4f);
+        tabLayout.setTabTextColors(R.color.white, R.color.color_0176da);
+        tabLayout.setBackgroundColor(getResources().getColor(R.color.color_fafafa));
         tabLayout.setupWithViewPager(viewPager);
     }
 
@@ -76,6 +77,8 @@ public class ChaoJiShuiActivity extends BaseActivity {
 
     private void initView() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("水，也是一种生活");
+        setSupportActionBar(toolbar);
         drawer = (DrawerLayout) findViewById(R.id.drawer);
         mActionBarDrawerToggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.open, R.string.close);
         drawer.setDrawerListener(mActionBarDrawerToggle);
