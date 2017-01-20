@@ -77,8 +77,10 @@ public class ChaoJiShuiActivity extends BaseActivity {
 
     private void initView() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("水，也是一种生活");
+//        toolbar.setTitle("水，也是一种生活态度");
         setSupportActionBar(toolbar);
+        //设为 false
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         drawer = (DrawerLayout) findViewById(R.id.drawer);
         mActionBarDrawerToggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.open, R.string.close);
         drawer.setDrawerListener(mActionBarDrawerToggle);
