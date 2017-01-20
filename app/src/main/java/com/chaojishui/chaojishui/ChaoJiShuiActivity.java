@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.chaojishui.chaojishui.adapter.FragmentPagerAdapter;
 import com.chaojishui.chaojishui.base.BaseActivity;
@@ -27,6 +28,10 @@ public class ChaoJiShuiActivity extends BaseActivity {
     TabLayout tabLayout;
     @Bind(R.id.viewPager)
     ViewPager viewPager;
+    @Bind(R.id.tv_title)
+    TextView tvTitle;
+    @Bind(R.id.tv_Sign)
+    TextView tvSign;
     private ActionBarDrawerToggle mActionBarDrawerToggle;
 
     @Override
