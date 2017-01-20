@@ -147,6 +147,13 @@
                 android:text="记事本"
                 android:textColor="@color/color_4bae4f" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="私信"
+                android:textColor="@color/color_4bae4f" />
+
 
             <ImageView
 
